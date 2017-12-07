@@ -1,0 +1,11 @@
+Hello!
+
+<form>
+  <mat-form-field>
+    <input matInput type="search" placeholder="Search character">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</form>
+<div *ngFor="let character of characters$ | async">
+  Name: {{ character }}
+</div>

@@ -9,6 +9,8 @@ https://angular.io/guide/service-worker-intro
 
 https://angular.io/guide/service-worker-configref
 
+https://material.angular.io/guide/getting-started
+
 npm install -g @angular/cli 1.6+
 
 ng new [name] --service-worker
@@ -136,3 +138,8 @@ strategy
 
 
 
+# Router
+# Modules
+# Services
+# Models
+# SWAPI
