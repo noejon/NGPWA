@@ -15,6 +15,10 @@ export class SearchCharacterComponent implements OnInit {
   constructor(private starWarsApiService: StarWarsApiService) { }
 
   ngOnInit() {
+  }
+
+  search(){
+    console.log(this.searchQuery);
     this.characters$ = this.starWarsApiService.searchCharacter(this.searchQuery);
   }
 

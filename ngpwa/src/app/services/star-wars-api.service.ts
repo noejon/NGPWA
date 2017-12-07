@@ -14,7 +14,8 @@ export class StarWarsApiService {
     return this.http.get('https://swapi.co/api/people/', {
       params: new HttpParams().set('search', searchQuery)
     }).map(data => {
-      return data['result'];
+      console.log(data);
+      return data['results'];
     });
   }
 

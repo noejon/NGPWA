@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { SearchCharacterComponent } from './search-character/search-character.component';
 import { RouterModule } from '@angular/router';
 import { StarWarsApiService } from './services/star-wars-api.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { StarWarsApiService } from './services/star-wars-api.service';
     HttpClientModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [StarWarsApiService],
   bootstrap: [AppComponent]
