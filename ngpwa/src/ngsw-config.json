@@ -21,7 +21,22 @@
     "resources": {
       "files": [
         "/assets/**"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/**"
       ]
     }
-  }]
+  }],
+    "dataGroups": [
+      {
+        "name" : "api-name?",
+        "urls": ["/noun1", "/noun2"],
+        "cacheConfig": {
+          "strategy": "freshness",
+          "maxSize": 20,
+          "maxAge": "9h",
+          "timeout": "5s"
+        }
+      }
+    ]
 }
