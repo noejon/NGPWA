@@ -9,17 +9,20 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SearchCharacterComponent } from './search-character/search-character.component';
 import { RouterModule } from '@angular/router';
 import { StarWarsApiService } from './services/star-wars-api.service';
 import { FormsModule } from '@angular/forms';
+import { CharacterDescriptionComponent } from './character-description/character-description.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchCharacterComponent
+    SearchCharacterComponent,
+    CharacterDescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
+    MatCardModule,
     FormsModule
   ],
   providers: [StarWarsApiService],
