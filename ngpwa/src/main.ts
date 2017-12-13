@@ -5,6 +5,12 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import 'hammerjs';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/concatMap';
+import 'rxjs/add/operator/startWith';
+import 'rxjs/add/operator/reduce';
+import 'rxjs/add/observable/of';
+
 
 if (environment.production) {
   enableProdMode();

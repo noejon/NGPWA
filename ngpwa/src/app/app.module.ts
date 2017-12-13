@@ -8,7 +8,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SearchCharacterComponent } from './search-character/search-character.component';
 import { RouterModule } from '@angular/router';
@@ -24,11 +25,12 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    RouterModule.forRoot(routes, {useHash: true}),
+    RouterModule.forRoot(routes, { useHash: true }),
     HttpClientModule,
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
+    MatButtonModule,
     FormsModule
   ],
   providers: [StarWarsApiService],

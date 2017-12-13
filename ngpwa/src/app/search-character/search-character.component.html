@@ -1,9 +1,8 @@
-Hello!
-
 <mat-form-field>
-  <input matInput type="search" placeholder="Search character" [(ngModel)]="searchQuery" (keyup)="search()">
+  <input matInput type="search" placeholder="Search character" [(ngModel)]="searchQuery">
   <mat-icon matSuffix>search</mat-icon>
 </mat-form-field>
+<button mat-button (click)='search()'>Search</button>
 <div *ngFor="let character of characters$ | async">
   Name: {{ character.name }}
 </div>
