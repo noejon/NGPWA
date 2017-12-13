@@ -9,6 +9,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/concatMap';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/operator/reduce';
+import 'rxjs/add/operator/scan';
 import 'rxjs/add/observable/of';
 
 

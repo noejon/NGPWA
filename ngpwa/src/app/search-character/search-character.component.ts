@@ -18,8 +18,11 @@ export class SearchCharacterComponent implements OnInit {
   }
 
   search(){
-    console.log(this.searchQuery);
-    this.characters$ = this.starWarsApiService.searchCharacter(this.searchQuery);
+    this.characters$ = this.starWarsApiService.searchCharacters(this.searchQuery);
+  }
+
+  scan(){
+    this.characters$ = this.starWarsApiService.scanCharacters(this.searchQuery);
   }
 
 }
