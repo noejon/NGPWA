@@ -29,13 +29,13 @@
   }],
     "dataGroups": [
       {
-        "name" : "api-name?",
-        "urls": ["/noun1", "/noun2"],
+        "name" : "swapi-people",
+        "urls": ["https://swapi.co/api/people"],
         "cacheConfig": {
           "strategy": "freshness",
-          "maxSize": 20,
-          "maxAge": "9h",
-          "timeout": "5s"
+          "maxSize": 10,
+          "maxAge": "365d6h",
+          "timeout": "4s"
         }
       }
     ]

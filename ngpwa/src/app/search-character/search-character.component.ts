@@ -9,8 +9,8 @@ import { Character } from '../models/character';
   styleUrls: ['./search-character.component.css']
 })
 export class SearchCharacterComponent implements OnInit {
-  private characters$: Observable<Character[]>;
-  private searchQuery: string;
+  characters$: Observable<Character[]>;
+  searchQuery: string;
 
   constructor(private starWarsApiService: StarWarsApiService) { }
 

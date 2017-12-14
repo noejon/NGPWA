@@ -1,6 +1,7 @@
 # NGPWA
 Playing around with PWA in Angular 5
 
+https://www.reddit.com/r/Angular2/comments/60y32v/observables_and_pagination_loop_a_flatmap/
 
 https://medium.com/google-developer-experts/a-new-angular-service-worker-creating-automatic-progressive-web-apps-part-2-practice-3221471269a1
 
@@ -10,6 +11,7 @@ https://angular.io/guide/service-worker-intro
 https://angular.io/guide/service-worker-configref
 
 https://material.angular.io/guide/getting-started
+https://swapi.co/
 
 npm install -g @angular/cli 1.6+
 
